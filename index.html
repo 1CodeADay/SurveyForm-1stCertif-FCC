@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coding Survey Form</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <h1 id="title">Coding Survey Form</h1>
+  <p id="description">Fill in the required details below to get a free coding roadmap.</p>
+<main>
+  <form id="survey-form" action="">
+
+    <fieldset>
+      <label id="name-label" for="name">Name
+        <input id="name" type="text" name="full-name" placeholder="Enter your name" required>
+      </label>
+
+      <label id="email-label" for="email">Email
+        <input id="email" type="email" name="email" placeholder="Enter your email" pattern="[a-z0-9]{8,}" required>
+      </label>
+
+      <label id="number-label" for="number">Age (optional)
+        <input id="number" type="number" name="number" placeholder="Age" min="16" max="55" required>
+      </label>
+      <label for="dropdown">How often do you code?</label>
+      <select id="dropdown" name="dropdown">
+        <option value="">select an option</option>
+        <option value="day">5 hours a day</option>
+        <option value="week">5 hours a week</option>
+        <option value="month">5 hours a month</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend >How do love to learn?</legend>
+      <label for="video-tuto">
+        <input class="inline" id="video-tuto" name="online" type="radio" value="video-tuto"> Watch video tutorials</label>
+      <label for="online-courses">
+        <input class="inline" id="online-courses" name="online" type="radio" value="online-courses"> Take online courses</label>
+      <label for="books-ebooks">
+        <input class="inline" id="books-ebooks" name="in-person" type="radio" value="books-ebooks"> Read books and ebooks</label>
+      <label for="coding-camps">
+        <input class="inline" id="coding-camps" name="in-person" type="radio" value="coding-camps"> Coding Bootcamps</label>
+    </fieldset>
+
+    <fieldset>
+      <label for="dropdown">Preferred Tech Job?</label>
+      <select id="dropdown" name="dropdown">
+        <option value="">select a future job</option>
+        <option value="1">Front-End Developer</option>
+        <option value="2">Back-End Developer</option>
+        <option value="3">Full-Stack Developer</option>
+        <option value="4">Software Engineer</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend >What programming languages would like to learn? (3 max) </legend>
+      <label for="languages"><input class="inline" type="checkbox" name="javascript" value="JavaScript"> JavaScript</label>
+      <label for="languages"><input class="inline" type="checkbox" name="python" value="Python"> Python</label>
+      <label for="languages"><input class="inline" type="checkbox" name="csharp" value="C#"> C#</label>
+      <label for="languages"><input class="inline" type="checkbox" name="java" value="Java"> Java</label>
+      <label for="languages"><input class="inline" type="checkbox" name="html-css" value="HTML/CSS"> HTML/CSS</label>
+      <label for="languages"><input class="inline" type="checkbox" name="php" value="PHP"> PHP</label>
+      <label for="languages"><input class="inline" type="checkbox" name="ruby" value="Ruby"> Ruby</label>
+      <label for="languages"><input class="inline" type="checkbox" name="ruby" value="Ruby"> Swift</label>
+      <label for="languages"><input class="inline" type="checkbox" name="ruby" value="Ruby"> Assembly language</label>
+
+    </fieldset>
+
+    <label for="bio">Provide a bio:
+      <textarea id="bio" name="bio" rows="7" cols="30" placeholder="I like coding on the beach..."></textarea>
+    </label>
+
+    <input id="submit" type="submit" value="Submit" />
+
+  </form>
+</main>
+</body>
+</html>
